@@ -1,0 +1,33 @@
+<!-- 
+    
+    helper with shortcuts on hover 
+
+-->
+
+
+<html ondragenter ="imp(event)" ondrop="endimp()" onmouseup="endimp()">
+<head>
+    <title>Editor</title>  
+    <link rel="stylesheet" type="text/css" href="editor.css">      
+</head>
+
+<body onkeydown="globalkeypresses(event)" >
+
+            
+    <div id = "bar" draggable = "false" >
+        
+
+        <label class = "label" id='label' for="input">Load</label> 
+        <input accept=".txt, .sg"  class = 'input' id = 'input' type="file" onchange="readfile(this)" >     
+ 
+        <button type="button" onclick="download()">save</button>
+<!--        <button type="button">topdf</button> -->
+        
+        
+    </div>        
+    
+    
+    <script src="editor.js"></script>   
+</body>
+
+</html>

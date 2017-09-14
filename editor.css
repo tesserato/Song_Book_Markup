@@ -1,0 +1,161 @@
+*{
+    font-family: monospace;
+    box-sizing: border-box;
+    /* border-style: solid;
+    border-width: 0px; */
+}
+
+.chords{
+    white-space: pre;
+}
+
+span {
+    white-space:pre;
+    min-width: fit-content;
+    font-family: monospace;
+    margin: 2px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.song{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:stretch;
+    overflow-x: hidden;
+    margin-top: 35px;
+    max-width: 210mm;
+    max-height: 297mm;
+    border-style: solid;
+    border-width: 1px;        
+}
+
+#bar{
+    position : fixed;
+    /* background: white; */
+    top: 10px;
+    /* height: fit-content; */
+    display: inline;
+}
+
+
+
+.hoverable {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    opacity: 0;
+    
+}
+
+.hoverable:hover { 
+    z-index: 2;
+    width: initial;
+    height: initial;
+    opacity: 1;
+    /* left: 0px; 
+    top: 0px; */
+}
+
+.crd{
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    font-weight: bolder;
+    color: blue;
+}
+
+#pretty {
+/*    opacity: 0;*/
+    background: white;
+    position: absolute;
+    left: 6px;
+    top:0;
+    z-index: 1;
+}
+
+.prettyimage{
+    position: relative;
+    opacity: 1;
+/*    width: 1em;*/
+/*    flex-basis: 1000px;*/
+/*    flex: 0 0 auto;*/
+    border-style: solid;
+    border-width: 0px; 
+}
+
+
+
+.input{
+    width: 60px;
+	height: 22px;
+/*    position: absolute;*/
+    top:0;
+    left: 0;
+	opacity: .5; 
+    border-style: solid;
+    border-width: 1px; 
+    z-index: 5;
+}
+
+
+button {
+    width: 60px;
+	height: 22px;
+    position: inline;
+/*    top:0;*/
+/*    margin-left: 100;*/
+}
+
+
+.label {
+    text-align: center;
+    width: 60px;
+	height: 22px;
+    position: absolute;
+/*    top:0;*/
+/*    left: 0;*/
+	opacity: 1; 
+    border-style: solid;
+    border-width: 1px;
+    background: white;
+}
+
+
+    
+
+
+.dropzone {
+    
+    position: absolute;
+    left: 20px;
+    width: 500px;
+	height: 600px;
+    border-style: solid;
+    border-width: 1px;
+    z-index: 10;
+    opacity: 0;
+}
+
+.dropzonelabel {
+    position: absolute;
+    left: 20px;
+    width: 500px;
+	height: 600px;
+    border-style: solid;
+    border-width: 1px;
+    opacity: 1;
+    z-index: 9;
+    background: white;
+    
+}
+
+
+
+
+
+
+
+
